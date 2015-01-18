@@ -1,0 +1,28 @@
+server:
+  port: 8443
+  ssl:
+    key-store: "./keystore/.keystore"
+    key-store-password: hogehoge
+    key-password: hogehoge
+
+spring:
+  datasource:
+    url: "jdbc:mysql://host/ing_app?characterEncoding=utf8"
+    username: user
+    password: password
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    show-sql: true
+
+multipart:
+  maxFileSize: 30MB
+  maxRequestSize: 30MB
+
+logging:
+  file: logs/app.log
+  level:
+      org:
+        springframework:
+          web: WARN
+        hibernate: ERROR
+
