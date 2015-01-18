@@ -24,3 +24,14 @@ PostgresSQLでも動くかも知れない？
 2. /src/main/resource/application.yml_templateをapplication.ymlにリネームし、DB接続文字列などの設定を書き換えます。
 3. mvn spring-boot:run で実行します。
 
+
+## API
+
+### POST /api/portal
+ポータル情報を追加します。
+
+### GET /api/portal.json?area
+ポータル情報をJSON形式で取得します。
+
+### GET /api/portal.kml?area&title[&areaStyle&portalStyle]
+ポータル情報をKML形式で取得します。
